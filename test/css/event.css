@@ -1,0 +1,188 @@
+@charset "utf-8";
+
+/*
+** Flow Event.css
+*/
+
+/* 
+** Header 
+*/
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 50px;
+    height: 78px;
+}
+header .logo {
+    display: inline-block;
+    justify-content: flex-start;
+}
+header .btnWrap {
+    justify-content: flex-end;
+    font-weight: 700;
+}
+header .btnWrap a + a {
+    margin-left: 6px;
+}
+header .btnWrap a:hover {
+    text-decoration: underline;
+}
+
+/*
+** Contents
+*/
+article {
+    padding: 150px 0;
+}
+.innerSection {
+    position: relative;
+    max-width: 1920px;
+    height: 100%;
+    margin: 0 auto;
+}
+.innerContent {
+    position: relative;
+    max-width: 900px;
+    height: 100%;
+    margin: 0 auto;
+} 
+.contentWrap {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.contentWrap.background {
+    background: url(../images/event/event_background01.png) top no-repeat;
+    background-size: cover;
+    width: 100%;
+}
+.imageWrap {
+    position: relative;
+    text-align: center;
+    margin: 0 auto;
+}
+.backgroundIcon {
+    position: absolute;
+    z-index: 1;
+}
+.bannerWrap  {
+    margin-top: 100px;
+}
+.banner-wraper {
+    position: relative;
+    height: 100px;
+    width: 100%;
+    overflow: hidden;
+}
+.banner-wraper img {
+    position: absolute;
+}
+.flowMemRecommend .formTitle {
+    margin-bottom: 10px;
+    display: block;
+    color: #555;
+    font-size: 16px;
+}
+.flowMemRecommend .formTitle::before {
+    content: "*";
+    margin-right: 10px;
+    display: inline-block;
+    vertical-align: middle;
+    color: #F87C37;
+    font-weight: bold;
+}                        
+ul.RecommendForm li {
+    margin-top: 30px;
+}
+ul.RecommendForm li:first-child {
+    margin-top: 0;
+}
+ul.RecommendForm li input {
+    padding: 16px 30px;
+    width: 100%;
+    height: 60px;
+    color: #583474;
+    font-family: inherit;
+    font-size: 18px;
+    font-weight: bold;
+    border: 1px solid #DDC9E7;
+    border-radius: 30px;
+    box-sizing: border-box;
+    outline: none;
+}
+ul.RecommendForm li input::placeholder {
+    color: #999;
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: normal;
+}
+ul.RecommendForm li input[type="checkbox"] {
+    margin-right: 10px;
+    display: inline-block;
+    vertical-align: middle;
+    width: 24px;
+    height: 24px;
+    box-sizing: border-box;
+    outline: none;
+}
+ul.RecommendForm li input[type="checkbox"] + label {
+    display: inline-block;
+    vertical-align: middle;
+    color: #555;
+    font-size: 16px;
+}
+ul.RecommendForm .formTitle {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* 
+** Footer 
+*/
+footer {
+    padding: 70px 0 150px;
+    background: #583474;
+}
+.faqWrap {
+    padding-top: 80px;
+}
+.faqWrap strong {
+    margin-bottom: 20px;
+    display: block;
+    font-size: 20px;
+}
+.faqWrap ul li a {
+    padding: 20px 10px;
+    display: block;
+    color: #fff;
+    font-size: 18px;
+    border-bottom: 1px solid #6F5C86;
+}
+.faqWrap ul li a::before {
+    content: "ㆍ";
+    display: inline-block;
+}
+.faqWrap ul li a:after {
+    content: "";
+    float: right;
+    width: 8px;
+    height: 8px;
+    border-top: 2px solid #fff;
+    border-right: 2px solid #fff;
+    transform: rotate(135deg);
+}
+.faqWrap ul li a.isActive:after {
+    content: "";
+    transform: rotate(315deg);
+}
+.faqWrap .faqAnswer {
+    display: none;
+    margin-top: 20px;
+    color: #C5B6D9;
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 27px;   
+}
+.faqWrap .isActive + .faqAnswer {
+    display: block;
+}
