@@ -35,22 +35,13 @@ function btnGoTop(){
     else {
         btnGoTop.hide();
     }
-    // console.log(winInHeight);
-    // console.log(winScrollTop);
 }   
 
 function faqListEvent(){
     var $FaqEventTarget = $('.faqWrap ul li a');
-    var $FaqAnswer = $('.faqAnswer');
 
-    $FaqEventTarget.click(function(e){
-        if( !$FaqEventTarget.hasClass('isActive') ){
-            $(this).addClass('isActive');
-        }
-        else {
-            $(this).removeClass('isActive');
-        }
-        e.preventDefault();
+    $FaqEventTarget.click(function(){
+        $FaqEventTarget.toggleClass('isActive');
     });
 }
 
