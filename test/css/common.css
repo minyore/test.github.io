@@ -268,6 +268,7 @@ i, em {
 .ar { text-align: right !important; }
 .mNone { margin: 0 !important; }
 .pNone { padding: 0 !important; }
+.mt5 { margin-top: 5px !important; }
 .mt10 { margin-top: 10px !important; }
 .mt20 { margin-top: 20px !important; }
 .mt30 { margin-top: 30px !important; }
@@ -280,6 +281,7 @@ i, em {
 .mb30 { margin-bottom: 30px !important; }
 .mb40 { margin-bottom: 40px !important; }
 .mb50 { margin-bottom: 50px !important; }
+.mb80 { margin-bottom: 80px !important; }
 .ml10 { margin-left: 10px !important; }
 .ml20 { margin-left: 20px !important; }
 .ml30 { margin-left: 30px !important; }

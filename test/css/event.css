@@ -141,6 +141,156 @@ ul.RecommendForm .formTitle {
     font-size: 18px;
     font-weight: bold;
 }
+table.recommendList {
+    width: 100%;
+}
+table.recommendList tr th {
+    vertical-align: middle;
+    padding: 15px;
+    height: 60px;
+    color: #583474;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    background:#F2ECF6;
+    border-top: 4px solid #583474;
+    border-bottom: 1px solid #583474;
+    text-align: center;
+}
+table.recommendList tr td {
+    vertical-align: middle;
+    padding: 13px 12px;
+    height: 100px;
+    color: #555; 
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 22px; 
+    background:#fff;
+    border-bottom: 1px solid #ddd;
+    text-align: center;
+}
+table.recommendList tr td .date {
+    font-weight: 400;
+}
+table.recommendList tr td.none {
+    color: #583474;
+    font-size: 18px;
+    line-height: 27px;
+    padding: 30px 0;
+    text-align: center;
+}
+.badge {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 60px;
+    color: #999;
+    padding: 8px 15px;
+    font-size: 14px;
+    line-height: 20px;
+    border-radius: 6px;
+    background: #fff;
+    border: 1px solid #999;
+}
+.badge .date {
+    margin-top: 5px;
+    color: #fff;
+    font-size: 15px;
+    line-height: 18px;
+}
+/* 가입일 */
+.badge.memJoin {
+    background: #22ABE7;
+    color: #fff;
+    border: 1px solid #22ABE7;
+}
+/* 1년 결제 */
+.badge.payment  {
+    background: #45AF2C;
+    color: #fff;
+    border: 1px solid #45AF2C;
+}
+/* 혜택 증정 */
+.badge.benefitGift {
+    background: #F87C37;
+    color: #fff;
+    border: 1px solid #F87C37;
+}
+/* 보류 */
+.badge.hold {
+    background: #999;
+    color: #fff;
+    border: 1px solid #999;
+} 
+.holdReason {
+    position: relative;
+    padding-left: 50px;
+    color: #777;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+    text-align: left;
+}
+.holdReason::before {
+    content: "보류";
+    position: absolute;
+    left: 0;
+    padding: 2px 9px;
+    color: #fff;
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 20px;
+    background: #777;
+    border-radius: 25px;
+}
+.faqWrap.recommend {
+    padding-top: 80px;
+    text-align: left;
+}
+.faqWrap.recommend ul li a {
+    padding: 20px 0;
+    color: #583474 !important;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 30px;
+}
+.faqWrap.recommend ul li a:before {
+    content: none;
+}
+.faqWrap.recommend ul li a:after {
+    top: 10px;
+    position: relative;
+    border-top: 2px solid #705387;
+    border-right: 2px solid #705387;    
+}
+.faqWrap.recommend ul li a.isActive:after {
+    top: 15px;
+    position: relative;
+    border-top: 2px solid #705387;
+    border-right: 2px solid #705387;
+}
+.faqWrap.recommend .faqAnswer {
+    display: none;
+    margin-top: 20px;
+    color: #705387;
+}
+.faqWrap.recommend .faqAnswer ul li {
+    margin-top: 12px;
+    padding-left: 15px;
+    font-weight: 500;
+    line-height: 24px;
+}
+.faqWrap.recommend .faqAnswer ul li:first-child {
+    margin-top: 0;
+}
+.faqWrap.recommend .faqAnswer ul li::before {
+    content: "ㆍ";
+    display: inline-block;
+    margin-left: -20px;
+    margin-right: 5px;
+}
 
 /* 
 ** Footer 
