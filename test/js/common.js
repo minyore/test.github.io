@@ -41,7 +41,7 @@ function faqListEvent(){
     var $FaqEventTarget = $('.faqWrap ul li a');
 
     $FaqEventTarget.click(function(){
-        $FaqEventTarget.toggleClass('isActive');
+        $(this).toggleClass('isActive');
     });
 }
 
