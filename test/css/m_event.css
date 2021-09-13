@@ -296,7 +296,7 @@ footer {
     display: block;
     font-size: 20px;
 }
-.faqWrap ul li a {
+.faqWrap ul li>a {
     position: relative;
     padding: 20px 30px;
     display: block;
@@ -305,12 +305,12 @@ footer {
     line-height: 26px;
     border-bottom: 1px solid #6F5C86;
 }
-.faqWrap ul li a::before {
+.faqWrap ul li>a::before {
     content: "ㆍ";
     display: inline-block;
     margin-left: -18px;
 }
-.faqWrap ul li a:after {
+.faqWrap ul li>a:after {
     content: "";
     position: absolute;
     top: 25px;
@@ -321,21 +321,36 @@ footer {
     border-right: 2px solid #fff;
     transform: rotate(135deg);
 }
-.faqWrap ul li a.isActive:after {
+.faqWrap ul li>a.isActive:after {
     content: "";
     transform: rotate(315deg);
     top: 30px;
 }
+.faqWrap ul li>a.isActive {
+    border-bottom: 0;
+}
 .faqWrap .faqAnswer {
     display: none;
-    margin-top: 20px;
+    padding-bottom: 20px;
     color: #C5B6D9;
     font-size: 16px;
     font-weight: normal;
-    line-height: 27px;   
+    line-height: 27px;
+    border-bottom: 1px solid #6F5C86;    
 }
 .faqWrap .isActive + .faqAnswer {
     display: block;
+}
+.faqWrap .faqAnswer p>a {
+    display: inline-block;
+    text-decoration: underline;
+}
+.faqWrap > p {
+    display: block;
+    color: #C5B6D9;
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 27px;
 }
 
 @media screen and (max-width: 320px) {

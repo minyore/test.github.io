@@ -307,18 +307,19 @@ footer {
     display: block;
     font-size: 20px;
 }
-.faqWrap ul li a {
-    padding: 20px 10px;
+.faqWrap ul li>a {
     display: block;
+    padding: 25px 10px;
+    height: 70px;
     color: #fff;
     font-size: 18px;
     border-bottom: 1px solid #6F5C86;
 }
-.faqWrap ul li a::before {
+.faqWrap ul li>a::before {
     content: "ㆍ";
     display: inline-block;
 }
-.faqWrap ul li a:after {
+.faqWrap ul li>a:after {
     content: "";
     float: right;
     width: 8px;
@@ -327,18 +328,35 @@ footer {
     border-right: 2px solid #fff;
     transform: rotate(135deg);
 }
-.faqWrap ul li a.isActive:after {
+.faqWrap ul li>a.isActive:after {
     content: "";
+    position: relative;
+    top: 5px;    
     transform: rotate(315deg);
+}
+.faqWrap ul li>a.isActive {
+    border-bottom: 0;
 }
 .faqWrap .faqAnswer {
     display: none;
-    margin-top: 20px;
+    padding-bottom: 20px;
     color: #C5B6D9;
     font-size: 16px;
     font-weight: normal;
     line-height: 27px;   
+    border-bottom: 1px solid #6F5C86;
+}
+.faqWrap .faqAnswer p>a {
+    display: inline-block;
+    text-decoration: underline;
 }
 .faqWrap .isActive + .faqAnswer {
     display: block;
+}
+.faqWrap > p {
+    display: block;
+    color: #C5B6D9;
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 27px;
 }
